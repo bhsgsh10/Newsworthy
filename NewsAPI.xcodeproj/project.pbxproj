@@ -11,6 +11,10 @@
 		315425A02567509600A63A2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3154259F2567509600A63A2A /* ContentView.swift */; };
 		315425A22567509900A63A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315425A12567509900A63A2A /* Assets.xcassets */; };
 		315425A52567509900A63A2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315425A42567509900A63A2A /* Preview Assets.xcassets */; };
+		315425AE256750CA00A63A2A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315425AD256750CA00A63A2A /* WebService.swift */; };
+		315425B1256751DD00A63A2A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315425B0256751DD00A63A2A /* Models.swift */; };
+		315425B42567523B00A63A2A /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315425B32567523B00A63A2A /* ArticleViewModel.swift */; };
+		315425B72567534100A63A2A /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315425B62567534100A63A2A /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		315425A12567509900A63A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315425A42567509900A63A2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		315425A62567509900A63A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315425AD256750CA00A63A2A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		315425B0256751DD00A63A2A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		315425B32567523B00A63A2A /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		315425B62567534100A63A2A /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3129F254256C5DD000EDFD1B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				315425B32567523B00A63A2A /* ArticleViewModel.swift */,
+				315425B62567534100A63A2A /* ArticleListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		3129F255256C5DE600EDFD1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315425B0256751DD00A63A2A /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		315425912567509500A63A2A = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +77,14 @@
 		3154259C2567509600A63A2A /* NewsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3129F255256C5DE600EDFD1B /* Models */,
+				3129F254256C5DD000EDFD1B /* View Models */,
 				3154259D2567509600A63A2A /* NewsAPIApp.swift */,
 				3154259F2567509600A63A2A /* ContentView.swift */,
 				315425A12567509900A63A2A /* Assets.xcassets */,
 				315425A62567509900A63A2A /* Info.plist */,
 				315425A32567509900A63A2A /* Preview Content */,
+				315425AD256750CA00A63A2A /* WebService.swift */,
 			);
 			path = NewsAPI;
 			sourceTree = "<group>";
@@ -138,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315425AE256750CA00A63A2A /* WebService.swift in Sources */,
+				315425B72567534100A63A2A /* ArticleListViewModel.swift in Sources */,
 				315425A02567509600A63A2A /* ContentView.swift in Sources */,
 				3154259E2567509600A63A2A /* NewsAPIApp.swift in Sources */,
+				315425B42567523B00A63A2A /* ArticleViewModel.swift in Sources */,
+				315425B1256751DD00A63A2A /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
